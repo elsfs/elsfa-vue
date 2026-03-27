@@ -1,0 +1,21 @@
+<template>
+  <div class="relative">
+    <UPageCard
+      variant="subtle"
+      class="rounded-2xl"
+    >
+      <video
+        class="rounded-xl"
+        data-v-baf90ddd=""
+        preload="none"
+        poster="/img/video-nuxt-ui-pro_kwfbdh.jpeg"
+        :controls="true"
+      ><source
+        data-v-baf90ddd=""
+        src="/video/video-nuxt-ui-pro_kwfbdh.mp4"
+        type="video/mp4"
+      >
+      </video>
+    </UPageCard>
+  </div>
+</template>

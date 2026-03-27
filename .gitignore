@@ -44,3 +44,4 @@ playwright-report/
 # Nuxt
 .nuxt
 .output
+docs/.data
