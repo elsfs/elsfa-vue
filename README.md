@@ -1,72 +1,72 @@
 # elsfa-vue
 
-This template should help get you started developing with Vue 3 in Vite.
+这个模板可以帮助你在 Vite 中快速开始使用 Vue 3 进行开发。
 
-## Recommended IDE Setup
+## 推荐的 IDE 设置
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VS Code](https://code.visualstudio.com/) + [Vue（官方）](https://marketplace.visualstudio.com/items?itemName=Vue.volar)（并请禁用 Vetur）。
 
-## Recommended Browser Setup
+## 推荐的浏览器设置
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- 基于 Chromium 的浏览器（Chrome、Edge、Brave 等）：
+  - 安装 [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - 在 Chrome DevTools 中[开启自定义对象格式化器](http://bit.ly/object-formatters)
+- Firefox：
+  - 安装 [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - 在 Firefox DevTools 中[开启自定义对象格式化器](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-## Type Support for `.vue` Imports in TS
+## 在 TS 中对 `.vue` 导入的类型支持
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+TypeScript 默认无法处理对 `.vue` 导入的类型信息，因此我们使用 `vue-tsc` 替代 `tsc` CLI 进行类型检查。在编辑器中需要安装 [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) 以使 TypeScript 语言服务识别 `.vue` 类型。
 
-## Customize configuration
+## 自定义配置
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+参阅 [Vite 配置参考](https://vite.dev/config/)。
 
-## Project Setup
+## 项目安装
 
 ```sh
 pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发环境编译与热重载
 
 ```sh
 pnpm dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 生产环境类型检查、编译与压缩
 
 ```sh
 pnpm build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### 使用 [Vitest](https://vitest.dev/) 运行单元测试
 
 ```sh
 pnpm test:unit
 ```
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+### 使用 [Playwright](https://playwright.dev) 运行端到端测试
 
 ```sh
-# Install browsers for the first run
+# 第一次运行前安装浏览器
 npx playwright install
 
-# When testing on CI, must build the project first
+# 在 CI 上测试前需要先构建项目
 pnpm build
 
-# Runs the end-to-end tests
+# 运行端到端测试
 pnpm test:e2e
-# Runs the tests only on Chromium
+# 仅在 Chromium 上运行
 pnpm test:e2e --project=chromium
-# Runs the tests of a specific file
+# 运行指定测试文件
 pnpm test:e2e tests/example.spec.ts
-# Runs the tests in debug mode
+# 以调试模式运行
 pnpm test:e2e --debug
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 使用 [ESLint](https://eslint.org/) 进行代码检查
 
 ```sh
 pnpm lint

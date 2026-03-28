@@ -1,63 +1,63 @@
-title: A plan for every need
-description: Our plans are designed to meet the requirements of both beginners and players. Get the right plan that suits you.
+title: 满足各种需求的价格方案
+description: 我们的方案设计兼顾新手和专业用户的需求。选择最适合您的方案。
 seo:
-  title: Pricing
-  description: Choose the plan that's right for you.
+  title: 价格
+  description: 选择适合您的方案。
 navigation.icon: i-lucide-credit-card
 plans:
-  - title: Basic
-    description: A basic plan for individuals.
+  - title: 基础版
+    description: 适合个人的基础方案。
     price:
-      month: $9.9
-      year: $99.9
+      month: ¥69
+      year: ¥699
     button:
-      label: Get Started
+      label: 开始使用
       color: neutral
       variant: subtle
     features:
-      - 1 GB Storage
-      - 1 Email Account
-      - 1 Domain
-      - 1 Website
-      - 1 Database
-      - 1 SSL Certificate
-      - 1 Support Ticket
-  - title: Standard
-    description: A standard plan for small teams.
+      - 1 GB 存储空间
+      - 1 个邮箱账户
+      - 1 个域名
+      - 1 个网站
+      - 1 个数据库
+      - 1 个 SSL 证书
+      - 1 个支持工单
+  - title: 标准版
+    description: 适合小型团队的标准方案。
     price:
-      month: $19.9
-      year: $199.9
+      month: ¥139
+      year: ¥1399
     highlight: true
     scale: true
     button:
-      label: Get Started
+      label: 开始使用
     features:
-      - 10 GB Storage
-      - 10 Email Accounts
-      - 10 Domains
-      - 10 Websites
-      - 10 Databases
-      - 10 SSL Certificates
-      - 10 Support Tickets
-  - title: Premium
-    description: A premium plan for large teams.
+      - 10 GB 存储空间
+      - 10 个邮箱账户
+      - 10 个域名
+      - 10 个网站
+      - 10 个数据库
+      - 10 个 SSL 证书
+      - 10 个支持工单
+  - title: 高级版
+    description: 适合大型团队的高级方案。
     price:
-      month: $29.9
-      year: $299.9
+      month: ¥209
+      year: ¥2099
     button:
-      label: Get Started
+      label: 开始使用
       color: neutral
       variant: subtle
     features:
-      - 100 GB Storage
-      - 100 Email Accounts
-      - 100 Domains
-      - 100 Websites
-      - 100 Databases
-      - 100 SSL Certificates
-      - 100 Support Tickets
+      - 100 GB 存储空间
+      - 100 个邮箱账户
+      - 100 个域名
+      - 100 个网站
+      - 100 个数据库
+      - 100 个 SSL 证书
+      - 100 个支持工单
 logos:
-  title: Trusted by the world's best
+  title: 深受全球优秀企业信赖
   icons:
     - i-simple-icons-amazonaws
     - i-simple-icons-heroku
@@ -65,18 +65,18 @@ logos:
     - i-simple-icons-vercel
     - i-simple-icons-cloudflare
 faq:
-  title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  title: 常见问题
+  description: 了解更多关于我们服务的详细信息。
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+    - label: 这项服务安全吗？
+      content: 我们采用行业领先的安全措施来保护您的数据和隐私。
+    - label: 如何取消订阅？
+      content: 您可以随时在账户设置中取消订阅，或联系客服团队协助您取消。
+    - label: 免费试用是如何运作的？
+      content: 注册后即可享受免费试用，无需信用卡。试用期结束后您可以选择订阅。
+    - label: 我可以更改方案吗？
+      content: 可以，您可以随时升级到更高级的方案，降级将在下个计费周期生效。
+    - label: 提供退款吗？
+      content: 我们提供 30 天无条件退款保证。如果您不满意，可以随时申请退款。
+    - label: 你们提供支持服务吗？
+      content: 是的，我们为所有用户提供邮件支持，高级方案用户还可获得优先技术支持。

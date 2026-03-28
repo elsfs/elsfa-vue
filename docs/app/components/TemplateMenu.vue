@@ -3,13 +3,13 @@
     v-slot="{ open }"
     :modal="false"
     :items="[{
-      label: 'Starter',
+      label: '入门模板',
       to: 'https://starter-template.nuxt.dev/'
     }, {
-      label: 'Landing',
+      label: '落地页',
       to: 'https://landing-template.nuxt.dev/'
     }, {
-      label: 'Docs',
+      label: '文档',
       to: 'https://docs-template.nuxt.dev/'
     }, {
       label: 'SaaS',
@@ -18,16 +18,16 @@
       checked: true,
       type: 'checkbox'
     }, {
-      label: 'Dashboard',
+      label: '仪表盘',
       to: 'https://dashboard-template.nuxt.dev/'
     }, {
-      label: 'Chat',
+      label: '聊天',
       to: 'https://chat-template.nuxt.dev/'
     }, {
-      label: 'Portfolio',
+      label: '作品集',
       to: 'https://portfolio-template.nuxt.dev/'
     }, {
-      label: 'Changelog',
+      label: '变更日志',
       to: 'https://changelog-template.nuxt.dev/'
     }]"
     :content="{ align: 'start' }"

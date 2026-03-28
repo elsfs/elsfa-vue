@@ -7,8 +7,8 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Sign up',
-  description: 'Create an account to get started'
+  title: '注册',
+  description: '创建账户开始使用'
 })
 
 const toast = useToast()
@@ -16,38 +16,38 @@ const toast = useToast()
 const fields = [{
   name: 'name',
   type: 'text' as const,
-  label: 'Name',
-  placeholder: 'Enter your name'
+  label: '姓名',
+  placeholder: '输入你的姓名'
 }, {
   name: 'email',
   type: 'text' as const,
-  label: 'Email',
-  placeholder: 'Enter your email'
+  label: '邮箱',
+  placeholder: '输入你的邮箱'
 }, {
   name: 'password',
-  label: 'Password',
+  label: '密码',
   type: 'password' as const,
-  placeholder: 'Enter your password'
+  placeholder: '输入你的密码'
 }]
 
 const providers = [{
   label: 'Google',
   icon: 'i-simple-icons-google',
   onClick: () => {
-    toast.add({ title: 'Google', description: 'Login with Google' })
+    toast.add({ title: 'Google', description: '使用 Google 登录' })
   }
 }, {
   label: 'GitHub',
   icon: 'i-simple-icons-github',
   onClick: () => {
-    toast.add({ title: 'GitHub', description: 'Login with GitHub' })
+    toast.add({ title: 'GitHub', description: '使用 GitHub 登录' })
   }
 }]
 
 const schema = z.object({
-  name: z.string().min(1, 'Name is required'),
-  email: z.email('Invalid email'),
-  password: z.string().min(8, 'Must be at least 8 characters')
+  name: z.string().min(1, '姓名是必填项'),
+  email: z.email('邮箱格式无效'),
+  password: z.string().min(8, '密码至少需要 8 个字符')
 })
 
 type Schema = z.output<typeof schema>
@@ -62,22 +62,22 @@ function onSubmit(payload: FormSubmitEvent<Schema>) {
     :fields="fields"
     :schema="schema"
     :providers="providers"
-    title="Create an account"
-    :submit="{ label: 'Create account' }"
+    title="创建账户"
+    :submit="{ label: '创建账户' }"
     @submit="onSubmit"
   >
     <template #description>
-      Already have an account? <ULink
+      已有账户？<ULink
         to="/login"
         class="text-primary font-medium"
-      >Login</ULink>.
+      >立即登录</ULink>。
     </template>
 
     <template #footer>
-      By signing up, you agree to our <ULink
+      注册即表示你同意我们的<ULink
         to="/"
         class="text-primary font-medium"
-      >Terms of Service</ULink>.
+      >服务条款</ULink>。
     </template>
   </UAuthForm>
 </template>

@@ -1,8 +1,8 @@
 title: 启动 [SaaS]{class="text-primary"} 以光速
 description: 利用Nuxt UI强大的组件、身份验证流程和企业级功能，构建可投入生产使用的SaaS应用程序。整个Nuxt生态系统信赖的同一组件库。
 seo:
-  title: Nuxt SaaS Template
-  description: Create stunning, fast and production-ready SaaS applications with Nuxt UI. 100+ Vue components, authentication, dark mode, and enterprise features built on Tailwind CSS.
+  title: Nuxt SaaS 模板
+  description: 使用 Nuxt UI 创建令人惊艳、快速且可投入生产的 SaaS 应用程序。100+ Vue 组件、身份验证、深色模式和基于 Tailwind CSS 的企业级功能。
 navigation: false
 hero:
   links:
@@ -20,130 +20,130 @@ hero:
       to: https://github.com/nuxt-ui-templates/saas
       target: _blank
 sections:
-  - title: Powered by Nuxt UI Components
-    description: Access the complete Nuxt UI component library with 100+ beautifully styled, accessible, and customizable Vue components. Everything you need to build professional SaaS applications.
+  - title: 由 Nuxt UI 组件驱动
+    description: 访问完整的 Nuxt UI 组件库，包含 100+ 个样式精美、可访问且可定制的 Vue 组件。构建专业 SaaS 应用所需的一切。
     id: features
     orientation: horizontal
     features:
-      - name: 100+ UI Components
-        description: From buttons to modals, data tables to forms - all styled with Tailwind CSS and accessible out of the box.
+      - name: 100+ UI 组件
+        description: 从按钮到模态框，数据表格到表单 - 全部采用 Tailwind CSS 样式，开箱即用的可访问性。
         icon: i-lucide-package
-      - name: Authentication Ready
-        description: Pre-built login, signup, and password reset flows. Just connect your backend and start onboarding users.
+      - name: 身份验证就绪
+        description: 预建的登录、注册和密码重置流程。只需连接后端即可开始用户引导。
         icon: i-lucide-shield
-      - name: TypeScript First
-        description: Full TypeScript support with auto-completion, type safety, and IntelliSense for every component and composable.
+      - name: TypeScript 优先
+        description: 全面的 TypeScript 支持，每个组件和组合式函数都具备自动补全、类型安全和智能提示。
         icon: i-lucide-code-2
-  - title: Built for Modern SaaS
-    description: Everything you need to launch and scale your SaaS. From beautiful marketing pages to complex dashboards, ship faster with production-ready patterns.
+  - title: 为现代 SaaS 而生
+    description: 启动和扩展 SaaS 所需的一切。从精美的营销页面到复杂的仪表板，使用生产就绪的模式更快交付。
     orientation: horizontal
     reverse: true
     features:
-      - name: Edge Performance
-        description: Optimized for Core Web Vitals with automatic code splitting, lazy loading, and SSR/SSG support.
+      - name: 边缘性能
+        description: 针对核心 Web 指标优化，具备自动代码分割、懒加载和 SSR/SSG 支持。
         icon: i-lucide-zap
-      - name: Dark Mode Ready
-        description: Automatic theme switching with smooth transitions. Respects system preferences and remembers user choice.
+      - name: 深色模式就绪
+        description: 自动主题切换，过渡流畅。尊重系统偏好并记住用户选择。
         icon: i-lucide-moon
-      - name: Global Ready
-        description: Built-in i18n support for 50+ languages with RTL/LTR layouts and @nuxt/fonts integration.
+      - name: 全球化就绪
+        description: 内置 i18n 支持，50+ 种语言，支持 RTL/LTR 布局，集成 @nuxt/fonts。
         icon: i-lucide-globe
 features:
-  title: Everything You Need to Ship
-  description: Stop building from scratch. Focus on your unique features while Nuxt UI handles the foundations with battle-tested components and patterns.
+  title: 发布所需的一切
+  description: 停止从头开始构建。专注于您的独特功能，而 Nuxt UI 通过久经验证的组件和模式处理基础工作。
   items:
-    - title: Beautiful Design System
-      description: Semantic color aliases, comprehensive design tokens, and Tailwind Variants for consistent, customizable styling.
+    - title: 精美的设计系统
+      description: 语义化颜色别名、全面的设计令牌和 Tailwind Variants，实现一致且可定制的样式。
       icon: i-lucide-palette
-    - title: Accessible by Default
-      description: Built on Reka UI for robust accessibility. WCAG compliant components that work for everyone, everywhere.
+    - title: 默认可访问
+      description: 基于 Reka UI 构建，实现强大的可访问性。WCAG 合规的组件，适用于每个人、每个地方。
       icon: i-lucide-accessibility
-    - title: Developer Experience
-      description: Auto-imports, hot module replacement, and comprehensive documentation. Build faster with less friction.
+    - title: 开发者体验
+      description: 自动导入、热模块替换和全面的文档。减少摩擦，构建更快。
       icon: i-lucide-terminal
-    - title: SEO Optimized
-      description: Server-side rendering, automatic meta tags, sitemap generation, and Open Graph images out of the box.
+    - title: SEO 优化
+      description: 服务器端渲染、自动元标签、站点地图生成和开箱即用的 Open Graph 图片。
       icon: i-lucide-search
-    - title: Production Ready
-      description: Error handling, loading states, form validation, and security best practices built into every component.
+    - title: 生产就绪
+      description: 错误处理、加载状态、表单验证和安全最佳实践内置于每个组件中。
       icon: i-lucide-check-circle
-    - title: Infinitely Customizable
-      description: Override any style with the ui prop, customize globally with AppConfig, or use Tailwind classes directly.
+    - title: 无限可定制
+      description: 使用 ui prop 覆盖任何样式，使用 AppConfig 全局定制，或直接使用 Tailwind 类。
       icon: i-lucide-settings
 testimonials:
-  headline: Trusted by Developers
-  title: Join Thousands Building with Nuxt UI
-  description: See why developers choose Nuxt UI to ship their SaaS applications faster and with more confidence.
+  headline: 受开发者信赖
+  title: 加入成千上万使用 Nuxt UI 构建的开发者
+  description: 了解为什么开发者选择 Nuxt UI 更快、更自信地交付他们的 SaaS 应用。
   items:
-    - quote: Nuxt UI transformed how we build. The component quality is exceptional - everything just works with perfect TypeScript support, accessibility, and dark mode built in.
+    - quote: Nuxt UI 改变了我们的构建方式。组件质量卓越——一切都完美运行，具备完美的 TypeScript 支持、可访问性和内置深色模式。
       user:
         name: Sarah Chen
-        description: CTO at TechScale Solutions
+        description: TechScale Solutions CTO
         avatar:
           src: https://i.pravatar.cc/120?img=1
-    - quote: We shipped our MVP in 2 weeks instead of 2 months. The authentication flows and form components saved us countless hours of development time.
+    - quote: 我们在 2 周内交付了 MVP，而不是 2 个月。身份验证流程和表单组件为我们节省了无数小时的开发时间。
       user:
         name: Marcus Rodriguez
-        description: VP of Engineering at DataFlow
+        description: DataFlow 工程副总裁
         avatar:
           src: https://i.pravatar.cc/120?img=7
-    - quote: The design system with AppConfig is brilliant. We maintain brand consistency across all our products while leveraging the full component library.
+    - quote: 带有 AppConfig 的设计系统非常棒。我们在利用完整组件库的同时，在所有产品中保持品牌一致性。
       user:
         name: David Kumar
-        description: Security Director at SecureStack
+        description: SecureStack 安全总监
         avatar:
           src: https://i.pravatar.cc/120?img=3
-    - quote: Perfect Lighthouse scores out of the box. Our Core Web Vitals improved dramatically just by switching to Nuxt UI components.
+    - quote: 开箱即用的完美 Lighthouse 分数。仅通过切换到 Nuxt UI 组件，我们的核心 Web 指标就显著提升。
       user:
         name: Emily Zhang
-        description: Lead Architect at ScaleForce
+        description: ScaleForce 首席架构师
         avatar:
           src: https://i.pravatar.cc/120?img=5
-    - quote: The Tailwind Variants system makes customization so intuitive. We can override any component style while keeping the functionality intact.
+    - quote: Tailwind Variants 系统让定制变得直观。我们可以在保持功能完整的同时覆盖任何组件样式。
       user:
         name: James Wilson
-        description: DevOps Lead at CloudPro
+        description: CloudPro DevOps 负责人
         avatar:
           src: https://i.pravatar.cc/120?img=8
-    - quote: From the SaaS template to production in days. The pre-built layouts, navigation, and content structure accelerated our launch.
+    - quote: 从 SaaS 模板到生产环境只需几天。预建的布局、导航和内容结构加速了我们的发布。
       user:
         name: Lisa Patel
-        description: CEO at AutoScale
+        description: AutoScale CEO
         avatar:
           src: https://i.pravatar.cc/120?img=9
-    - quote: Reka UI foundation means accessibility is never an afterthought. We achieved WCAG compliance without any custom work.
+    - quote: Reka UI 基础意味着可访问性绝不是事后想法。我们无需任何定制工作就实现了 WCAG 合规。
       user:
         name: Michael Torres
-        description: Frontend Lead at AccessFirst
+        description: AccessFirst 前端负责人
         avatar:
           src: https://i.pravatar.cc/120?img=11
-    - quote: The documentation is outstanding. Every component has clear examples, and the community on Discord is incredibly helpful.
+    - quote: 文档非常出色。每个组件都有清晰的示例，Discord 社区非常有帮助。
       user:
         name: Rachel Kim
-        description: Performance Engineer at APIHub
+        description: APIHub 性能工程师
         avatar:
           src: https://i.pravatar.cc/120?img=10
-    - quote: We replaced three different UI libraries with Nuxt UI. The consistency and quality across all components is unmatched.
+    - quote: 我们用 Nuxt UI 替换了三个不同的 UI 库。所有组件的一致性和质量无与伦比。
       user:
         name: Thomas Weber
-        description: UI Architecture Lead at DesignScale
+        description: DesignScale UI 架构负责人
         avatar:
           src: https://i.pravatar.cc/120?img=12
-    - quote: The integration with Nuxt modules is seamless. Color mode, fonts, icons - everything works together perfectly.
+    - quote: 与 Nuxt 模块的集成无缝。颜色模式、字体、图标——一切都完美协作。
       user:
         name: Sophia Martinez
-        description: Integration Specialist at TechFlow
+        description: TechFlow 集成专家
         avatar:
           src: https://i.pravatar.cc/120?img=14
 cta:
-  title: Ready to build an amazing SaaS?
-  description: Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today.
+  title: 准备好构建出色的 SaaS 了吗？
+  description: 加入成千上万使用 Nuxt 和 Nuxt UI 构建的开发者。获取此模板，立即开始交付。
   links:
-    - label: Start building
+    - label: 开始构建
       to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt'
       target: _blank
       trailingIcon: i-lucide-arrow-right
-    - label: View on GitHub
+    - label: 在 GitHub 上查看
       to: 'https://github.com/nuxt-ui-templates/saas'
       target: _blank
       variant: subtle

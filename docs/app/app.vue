@@ -13,12 +13,12 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'zh-CN'
   }
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt SaaS template',
+  titleTemplate: '%s - Nuxt SaaS 模板',
   ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/saas-light.png',
   twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/saas-light.png',
   twitterCard: 'summary_large_image'
@@ -32,19 +32,19 @@ const { data: files } = useLazyAsyncData('search', () => queryCollectionSearchSe
 })
 
 const links = [{
-  label: 'Docs',
+  label: '文档',
   icon: 'i-lucide-book',
   to: '/docs/getting-started'
 }, {
-  label: 'Pricing',
+  label: '定价',
   icon: 'i-lucide-credit-card',
   to: '/pricing'
 }, {
-  label: 'Blog',
+  label: '博客',
   icon: 'i-lucide-pencil',
   to: '/blog'
 }, {
-  label: 'Changelog',
+  label: '变更日志',
   icon: 'i-lucide-history',
   to: '/changelog'
 }]

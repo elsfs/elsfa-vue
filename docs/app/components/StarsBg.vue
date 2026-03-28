@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<{
   })
 })
 
-// Generate random star positions and sizes
+// 生成随机星星位置和大小
 const generateStars = (count: number): Star[] => {
   return Array.from({ length: count }, () => ({
     x: Math.floor(Math.random() * 2000),
@@ -31,14 +31,14 @@ const generateStars = (count: number): Star[] => {
   }))
 }
 
-// Define speed configurations once
+// 一次性定义速度配置
 const speedMap = {
   slow: { duration: 200, opacity: 0.5, ratio: 0.3 },
   normal: { duration: 150, opacity: 0.75, ratio: 0.3 },
   fast: { duration: 100, opacity: 1, ratio: 0.4 }
 }
 
-// Use a more efficient approach to generate and store stars
+// 使用更高效的方式生成和存储星星
 const stars = useState<{ slow: Star[], normal: Star[], fast: Star[] }>('stars', () => {
   return {
     slow: generateStars(Math.floor(props.starCount * speedMap.slow.ratio)),
@@ -47,7 +47,7 @@ const stars = useState<{ slow: Star[], normal: Star[], fast: Star[] }>('stars', 
   }
 })
 
-// Compute star layers with different speeds and opacities
+// 计算具有不同速度和透明度的星星层级
 const starLayers = computed(() => [
   { stars: stars.value.fast, ...speedMap.fast },
   { stars: stars.value.normal, ...speedMap.normal },

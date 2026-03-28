@@ -7,8 +7,8 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Login',
-  description: 'Login to your account to continue'
+  title: '登录',
+  description: '登录你的账户以继续'
 })
 
 const toast = useToast()
@@ -16,17 +16,17 @@ const toast = useToast()
 const fields = [{
   name: 'email',
   type: 'text' as const,
-  label: 'Email',
-  placeholder: 'Enter your email',
+  label: '邮箱',
+  placeholder: '输入你的邮箱',
   required: true
 }, {
   name: 'password',
-  label: 'Password',
+  label: '密码',
   type: 'password' as const,
-  placeholder: 'Enter your password'
+  placeholder: '输入你的密码'
 }, {
   name: 'remember',
-  label: 'Remember me',
+  label: '记住我',
   type: 'checkbox' as const
 }]
 
@@ -34,19 +34,19 @@ const providers = [{
   label: 'Google',
   icon: 'i-simple-icons-google',
   onClick: () => {
-    toast.add({ title: 'Google', description: 'Login with Google' })
+    toast.add({ title: 'Google', description: '使用 Google 登录' })
   }
 }, {
   label: 'GitHub',
   icon: 'i-simple-icons-github',
   onClick: () => {
-    toast.add({ title: 'GitHub', description: 'Login with GitHub' })
+    toast.add({ title: 'GitHub', description: '使用 GitHub 登录' })
   }
 }]
 
 const schema = z.object({
-  email: z.email('Invalid email'),
-  password: z.string().min(8, 'Must be at least 8 characters')
+  email: z.email('邮箱格式无效'),
+  password: z.string().min(8, '密码至少需要 8 个字符')
 })
 
 type Schema = z.output<typeof schema>
@@ -61,15 +61,15 @@ function onSubmit(payload: FormSubmitEvent<Schema>) {
     :fields="fields"
     :schema="schema"
     :providers="providers"
-    title="Welcome back"
+    title="欢迎回来"
     icon="i-lucide-lock"
     @submit="onSubmit"
   >
     <template #description>
-      Don't have an account? <ULink
+      还没有账户？<ULink
         to="/signup"
         class="text-primary font-medium"
-      >Sign up</ULink>.
+      >立即注册</ULink>。
     </template>
 
     <template #password-hint>
@@ -77,14 +77,14 @@ function onSubmit(payload: FormSubmitEvent<Schema>) {
         to="/"
         class="text-primary font-medium"
         tabindex="-1"
-      >Forgot password?</ULink>
+      >忘记密码？</ULink>
     </template>
 
     <template #footer>
-      By signing in, you agree to our <ULink
+      登录即表示你同意我们的<ULink
         to="/"
         class="text-primary font-medium"
-      >Terms of Service</ULink>.
+      >服务条款</ULink>。
     </template>
   </UAuthForm>
 </template>

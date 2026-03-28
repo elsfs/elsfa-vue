@@ -2,17 +2,17 @@
 const route = useRoute()
 
 const items = computed(() => [{
-  label: 'Docs',
+  label: '文档',
   to: '/docs',
   active: route.path.startsWith('/docs')
 }, {
-  label: 'Pricing',
+  label: '定价',
   to: '/pricing'
 }, {
-  label: 'Blog',
+  label: '博客',
   to: '/blog'
 }, {
-  label: 'Changelog',
+  label: '变更日志',
   to: '/changelog'
 }])
 </script>
@@ -43,7 +43,7 @@ const items = computed(() => [{
       />
 
       <UButton
-        label="Sign in"
+        label="登录"
         color="neutral"
         variant="outline"
         to="/login"
@@ -51,7 +51,7 @@ const items = computed(() => [{
       />
 
       <UButton
-        label="Sign up"
+        label="注册"
         color="neutral"
         trailing-icon="i-lucide-arrow-right"
         class="hidden lg:inline-flex"
@@ -69,7 +69,7 @@ const items = computed(() => [{
       <USeparator class="my-6" />
 
       <UButton
-        label="Sign in"
+        label="登录"
         color="neutral"
         variant="subtle"
         to="/login"
@@ -77,7 +77,7 @@ const items = computed(() => [{
         class="mb-3"
       />
       <UButton
-        label="Sign up"
+        label="注册"
         color="neutral"
         to="/signup"
         block

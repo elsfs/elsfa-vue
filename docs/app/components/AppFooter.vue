@@ -1,36 +1,36 @@
 <script setup lang="ts">
 const columns = [{
-  label: 'Resources',
+  label: '资源',
   children: [{
-    label: 'Help center'
+    label: '帮助中心'
   }, {
-    label: 'Docs'
+    label: '文档'
   }, {
-    label: 'Roadmap'
+    label: '路线图'
   }, {
-    label: 'Changelog'
+    label: '变更日志'
   }]
 }, {
-  label: 'Features',
+  label: '功能',
   children: [{
-    label: 'Affiliates'
+    label: '合作伙伴'
   }, {
-    label: 'Portal'
+    label: '门户'
   }, {
-    label: 'Jobs'
+    label: '职位'
   }, {
-    label: 'Sponsors'
+    label: '赞助商'
   }]
 }, {
-  label: 'Company',
+  label: '公司',
   children: [{
-    label: 'About'
+    label: '关于我们'
   }, {
-    label: 'Pricing'
+    label: '定价'
   }, {
-    label: 'Careers'
+    label: '职位'
   }, {
-    label: 'Blog'
+    label: '博客'
   }]
 }]
 
@@ -43,8 +43,8 @@ function onSubmit() {
   loading.value = true
 
   toast.add({
-    title: 'Subscribed!',
-    description: 'You\'ve been subscribed to our newsletter.'
+    title: '已订阅!',
+    description: '您已订阅我们的新闻通讯。'
   })
 }
 </script>
@@ -63,21 +63,22 @@ function onSubmit() {
             <form @submit.prevent="onSubmit">
               <UFormField
                 name="email"
-                label="Subscribe to our newsletter"
+                label="订阅我们的新闻通讯"
                 size="lg"
               >
                 <UInput
                   v-model="email"
                   type="email"
                   class="w-full"
-                  placeholder="Enter your email"
+                  placeholder="输入您的邮箱"
+                >
                 >
                   <template #trailing>
                     <UButton
                       type="submit"
                       size="xs"
                       color="neutral"
-                      label="Subscribe"
+                      label="订阅"
                     />
                   </template>
                 </UInput>
@@ -90,7 +91,7 @@ function onSubmit() {
 
     <template #left>
       <p class="text-muted text-sm">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        使用 Nuxt UI 构建 • © {{ new Date().getFullYear() }}
       </p>
     </template>
 
@@ -99,7 +100,7 @@ function onSubmit() {
         to="https://go.nuxt.com/discord"
         target="_blank"
         icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
+        aria-label="Nuxt 在 Discord 上"
         color="neutral"
         variant="ghost"
       />
@@ -107,7 +108,7 @@ function onSubmit() {
         to="https://go.nuxt.com/x"
         target="_blank"
         icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
+        aria-label="X 上的 Nuxt"
         color="neutral"
         variant="ghost"
       />
@@ -115,7 +116,7 @@ function onSubmit() {
         to="https://github.com/nuxt-ui-templates/saas"
         target="_blank"
         icon="i-simple-icons-github"
-        aria-label="Nuxt UI on GitHub"
+        aria-label="Nuxt UI 在 GitHub 上"
         color="neutral"
         variant="ghost"
       />
