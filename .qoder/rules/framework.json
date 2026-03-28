@@ -1,0 +1,27 @@
+{
+  "preferredFramework": "Vue 3",
+  "preferredApi": "Composition API",
+  "language": "TypeScript",
+  "buildTool": "Vite",
+  "uiFramework": "Nuxt UI",
+  "cssFramework": "Tailwind CSS",
+  "monorepoTool": "pnpm workspace",
+  "projectName": "elsfa-vue",
+  "projectAbbreviation": "elsfs",
+  "documentationFramework": "@nuxt/content",
+  "testingTools": ["Vitest", "Playwright"],
+  "lintingTools": ["ESLint", "Oxlint"],
+  "preferredLanguage": "中文",
+  "codeStyle": {
+    "componentNaming": "PascalCase",
+    "composableNaming": "camelCase",
+    "fileNaming": "kebab-case"
+  },
+  "nuxtModules": [
+    "@nuxt/ui",
+    "@nuxt/content",
+    "@nuxt/image",
+    "@nuxt/fonts",
+    "@vueuse/nuxt"
+  ]
+}
