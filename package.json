@@ -4,28 +4,22 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "dev:admin": "pnpm --filter @elsfa/admin dev",
+    "dev:docs": "pnpm --filter @elsfa/docs dev",
+    "build:admin": "pnpm --filter @elsfa/admin build",
+    "build:docs": "pnpm --filter @elsfa/docs build",
+    "dev": "pnpm --filter @elsfa/admin dev",
+    "build": "pnpm --filter @elsfa/admin build",
+    "preview": "pnpm --filter @elsfa/admin preview",
     "postinstall": "nuxt prepare",
     "test:e2e": "playwright test",
-    "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "run-s lint:*",
-    "lint:oxlint": "oxlint elsfa-vue --fix",
-    "lint:eslint": "eslint elsfa-vue --fix --cache",
-    "format": "oxfmt src"
-  },
-  "dependencies": {
-    "@pinia/nuxt": "^0.9.0",
-    "nuxt": "^4.4.2",
-    "pinia": "^3.0.4",
-    "vue": "^3.6.0-beta.9",
-    "vue-router": "^5.0.3"
+    "lint:oxlint": "oxlint --fix",
+    "lint:eslint": "eslint --fix --cache",
+    "format": "oxfmt ."
   },
   "devDependencies": {
-    "vite": "^7.3.1",
     "@nuxt/devtools": "^2.4.0",
     "@playwright/test": "^1.58.2",
     "@tsconfig/node24": "^24.0.4",
@@ -42,12 +36,21 @@
     "jiti": "^2.6.1",
     "jsdom": "^28.1.0",
     "npm-run-all2": "^8.0.4",
+    "nuxt": "catalog:",
     "oxfmt": "^0.37.0",
     "oxlint": "~1.51.0",
     "typescript": "~5.9.3",
+    "vite": "^7.3.1",
     "vue-tsc": "^3.2.5"
   },
   "engines": {
-    "node": "^20.19.0 || >=22.12.0"
+    "node": ">=22.5.0",
+    "pnpm": ">=9.10.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "sqlite3"
+    ]
   }
 }

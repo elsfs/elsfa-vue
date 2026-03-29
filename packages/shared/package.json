@@ -1,0 +1,11 @@
+{
+  "name": "@elsfa/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./nuxt.config.ts",
+  "peerDependencies": {
+    "nuxt": "catalog:",
+    "vue": "catalog:"
+  }
+}

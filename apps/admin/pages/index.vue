@@ -1,11 +1,8 @@
 <template>
   <div class="home">
-    <h1>Welcome to Nuxt.js!</h1>
-    <p>
-      Visit <a href="https://nuxt.com/" target="_blank" rel="noopener">Nuxt.js Documentation</a> to
-      read the documentation
-    </p>
-    
+    <h1>Admin 管理后台</h1>
+    <p>欢迎使用 elsfa-vue 管理后台</p>
+
     <Counter />
   </div>
 </template>
@@ -13,13 +10,13 @@
 <script setup lang="ts">
 // 定义页面元数据
 definePageMeta({
-  title: 'Home',
+  title: 'Admin Dashboard',
 })
 
 // 使用 SEO 元数据
 useSeoMeta({
-  title: 'elsfa-vue - Home',
-  description: 'Welcome to the elsfa-vue application built with Nuxt.js',
+  title: 'elsfa-vue - Admin Dashboard',
+  description: 'elsfa-vue Admin Dashboard',
 })
 </script>
 

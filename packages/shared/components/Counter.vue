@@ -3,7 +3,7 @@
     <h2>Pinia Counter Store</h2>
     <p class="count">{{ count }}</p>
     <p class="double-count">Double: {{ doubleCount }}</p>
-    
+
     <div class="buttons">
       <button @click="decrement" class="btn btn-decrease">-</button>
       <button @click="increment" class="btn btn-increase">+</button>

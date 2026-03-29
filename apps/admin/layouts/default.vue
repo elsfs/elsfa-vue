@@ -2,16 +2,16 @@
   <div class="layout-default">
     <header class="layout-header">
       <nav>
-        <NuxtLink to="/">首页</NuxtLink>
+        <NuxtLink to="/">Admin</NuxtLink>
       </nav>
     </header>
-    
+
     <main class="layout-main">
       <slot />
     </main>
-    
+
     <footer class="layout-footer">
-      <p>&copy; 2026 elsfa-vue. Built with Nuxt.js</p>
+      <p>&copy; 2026 elsfa-vue Admin. Built with Nuxt.js</p>
     </footer>
   </div>
 </template>
